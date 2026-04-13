@@ -8,6 +8,8 @@ const app = express();
 const ALLOWED_ORIGINS = [
   "http://localhost:3000",   // frontend dev
   "http://localhost:3001",   // admin dev
+  "https://admin-creators-touch.vercel.app",
+  "https://creators-touch.vercel.app"
 ];
 
 app.use(cors({

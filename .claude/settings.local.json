@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf D:/creative_touch/creatves/backend/src/data D:/creative_touch/creatves/backend/src/models D:/creative_touch/creatves/backend/src/services D:/creative_touch/creatves/backend/src/sockets D:/creative_touch/creatves/backend/src/utils && find D:/creative_touch/creatves/backend/src -name \".gitkeep\" -delete)"
+    ]
+  }
+}

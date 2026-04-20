@@ -6,3 +6,7 @@ node_modules/
 
 # misc
 .DS_Store
+
+# uploaded images (keep folder, ignore contents)
+uploads/*
+!uploads/.gitkeep

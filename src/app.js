@@ -1,5 +1,6 @@
 const express      = require("express");
 const cors         = require("cors");
+const path         = require("path");
 const routes       = require("./routes/index");
 const errorHandler = require("./middlewares/errorHandler");
 
@@ -21,7 +22,8 @@ app.use(cors({
   },
   credentials: true,
 }));
-app.use(express.json());
+app.use(express.json({ limit: "10mb" }));
+app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 app.use("/api", routes);
 

@@ -7,12 +7,15 @@
     "start": "node src/server.js",
     "migrate": "node src/config/migrate.js",
     "migrate:blogs-v2": "node src/config/migrate_blogs_v2.js",
-    "migrate:contacts": "node src/config/migrate_contacts.js"
+    "migrate:contacts": "node src/config/migrate_contacts.js",
+    "migrate:users": "node src/config/migrate_users.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3",
     "multer": "^2.1.1",
     "pg": "^8.20.0"
   },
